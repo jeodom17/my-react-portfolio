@@ -4,25 +4,6 @@ export default function Footer() {
   return (
     <>
       <footer className="relative bg-emerald-500 pt-8 pb-6">
-        <div
-          className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
-          style={{ transform: "translateZ(0)" }}
-        >
-          {/* <svg
-            className="absolute bottom-0 overflow-hidden"
-            xmlns="http://www.w3.org/2000/svg"
-            preserveAspectRatio="none"
-            version="1.1"
-            viewBox="0 0 2560 100"
-            x="0"
-            y="0"
-          >
-            <polygon
-              className="text-emerald-200 fill-current"
-              points="2560 0 2560 100 0 100"
-            ></polygon>
-          </svg> */}
-        </div>
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-center lg:text-left">
             <div className="w-full lg:w-6/12 px-4">
@@ -57,103 +38,60 @@ export default function Footer() {
                 </button>
               </div>
             </div>
-            <div className="w-full lg:w-6/12 px-4">
-              <div className="flex flex-wrap items-top mb-6">
-                <div className="w-full lg:w-4/12 px-4 ml-auto">
-                  <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                    Useful Links
-                  </span>
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/presentation?ref=nr-footer"
+            <section>
+              <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
+                <div class="flex-auto p-5 lg:p-10">
+                  <h4 class="text-2xl mb-4 text-black font-semibold">
+                    Send Me a Message
+                  </h4>
+                  <form id="feedbackForm" action="" method="">
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="email"
                       >
-                        About Us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://blog.creative-tim.com?ref=nr-footer"
+                        Email
+                      </label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="border-0 px-3 py-3 rounded text-sm shadow w-full
+                    bg-gray-300 placeholder-black text-gray-800 outline-none focus:bg-gray-400"
+                        placeholder=" "
+                      />
+                    </div>
+                    <div class="relative w-full mb-3">
+                      <label
+                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        for="message"
                       >
-                        Blog
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.github.com/creativetimofficial?ref=nr-footer"
+                        Message
+                      </label>
+                      <textarea
+                        maxlength="300"
+                        name="feedback"
+                        id="feedback"
+                        rows="4"
+                        cols="80"
+                        class="border-0 px-3 py-3 bg-gray-300 placeholder-black text-gray-800 rounded text-sm shadow focus:outline-none w-full"
+                        placeholder=""
+                        required
+                      ></textarea>
+                    </div>
+                    <div class="text-center mt-6">
+                      <button
+                        id="feedbackBtn"
+                        class="bg-yellow-300 text-black text-center mx-auto active:bg-yellow-400 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                        type="submit"
                       >
-                        Github
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://www.creative-tim.com/bootstrap-themes/free?ref=nr-footer"
-                      >
-                        Free Products
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div className="w-full lg:w-4/12 px-4">
-                  <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                    Other Resources
-                  </span>
-                  <ul className="list-unstyled">
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://github.com/creativetimofficial/notus-react/blob/main/LICENSE.md?ref=nr-footer"
-                      >
-                        MIT License
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms?ref=nr-footer"
-                      >
-                        Terms & Conditions
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/privacy?ref=nr-footer"
-                      >
-                        Privacy Policy
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/contact-us?ref=nr-footer"
-                      >
-                        Contact Us
-                      </a>
-                    </li>
-                  </ul>
+                        Submit
+                      </button>
+                    </div>
+                  </form>
                 </div>
               </div>
-            </div>
-          </div>
-          <hr className="my-6 border-blueGray-300" />
-          <div className="flex flex-wrap items-center md:justify-between justify-center">
-            <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div className="text-sm text-blueGray-500 font-semibold py-1">
-                Copyright © {new Date().getFullYear()} Notus React by{" "}
-                <a
-                  href="https://www.creative-tim.com?ref=nr-footer"
-                  className="text-blueGray-500 hover:text-blueGray-800"
-                >
-                  Creative Tim
-                </a>
-                .
-              </div>
-            </div>
+            </section>
           </div>
         </div>
       </footer>
