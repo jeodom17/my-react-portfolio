@@ -10,7 +10,7 @@ export default function Navbar(props) {
             className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
             href="#pablo"
           >
-            emerald Color
+            Justin Odom
           </a>
           <button
             className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
@@ -29,7 +29,7 @@ export default function Navbar(props) {
                 href="#pablo"
               >
                 <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Share</span>
+                <span className="ml-2">Portfolio</span>
               </a>
             </li>
             <li className="nav-item">
@@ -38,16 +38,16 @@ export default function Navbar(props) {
                 href="#pablo"
               >
                 <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Tweet</span>
+                <span className="ml-2">Resume</span>
               </a>
             </li>
             <li className="nav-item">
               <a
                 className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                href="#pablo"
+                href="google.com"
               >
                 <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Pin</span>
+                <span className="ml-2">Contact Me</span>
               </a>
             </li>
           </ul>
