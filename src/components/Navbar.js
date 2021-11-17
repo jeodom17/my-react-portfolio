@@ -3,11 +3,11 @@ import React from "react";
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-emerald-500 mb-3">
+    <nav className="relative flex flex-wrap items-center justify-between px-2 py-4 navbar-expand-lg bg-emerald-500 mb-3">
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
           <a
-            className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white"
+            className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading uppercase text-white hover:text-pink-700"
             href="#pablo"
           >
             Justin Odom
@@ -29,7 +29,11 @@ export default function Navbar(props) {
                 href="#pablo"
               >
                 <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Portfolio</span>
+                <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
+                  <button class="bg-emerald-500 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                    Portfolio
+                  </button>
+                </span>
               </a>
             </li>
             <li className="nav-item">
@@ -38,7 +42,11 @@ export default function Navbar(props) {
                 href="#pablo"
               >
                 <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Resume</span>
+                <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
+                <button class="bg-emerald-500 hover:bg-pink-700 text-white font-bold text-xl md:text-xl lg:text-xl font-heading py-2 px-8 rounded-full">
+                    Resume
+                  </button>
+                </span>
               </a>
             </li>
             <li className="nav-item">
@@ -47,7 +55,11 @@ export default function Navbar(props) {
                 href="google.com"
               >
                 <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i>
-                <span className="ml-2">Contact Me</span>
+                <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
+                <button class="bg-emerald-500 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                    Contact Me
+                  </button>
+                </span>
               </a>
             </li>
           </ul>
