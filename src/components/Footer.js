@@ -5,40 +5,39 @@ export default function Footer() {
     <>
       <footer className="relative bg-emerald-500 pt-8 pb-6">
         <div className="container mx-auto px-4">
-          <div className="flex flex-wrap text-center lg:text-left">
-            <div className="w-full lg:w-6/12 px-4">
+          <div className="flex flex-row gap-x-20 text-center lg:text-left">
+            <div className="col-span-2 w-full lg:w-6/12 px-4">
               <h4 className="text-3xl font-semibold">Let's keep in touch!</h4>
-              <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-                Find us on any of these platforms, we respond 1-2 business days.
+              <h5 className="text-lg mt-0 mb-2 text-black-600">
+                Find me on any of these platforms.
               </h5>
-              <div className="mt-6 lg:mb-0 mb-6">
-                <button
-                  className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                  type="button"
-                >
-                  <i className="fab fa-twitter"></i>
-                </button>
-                <button
-                  className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                  type="button"
-                >
-                  <i className="fab fa-facebook-square"></i>
-                </button>
-                <button
-                  className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                  type="button"
-                >
-                  <i className="fab fa-dribbble"></i>
-                </button>
-                <button
-                  className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                  type="button"
-                >
-                  <i className="fab fa-github"></i>
-                </button>
-              </div>
+              <div class="section-content">
+              <ul>
+                <li>
+              <button class="mt-10 bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                <a href="tel:9015249672">Phone: 901.524.9672</a>
+              </button>
+              </li>
+              <li>
+              <button class="mt-10 bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                <a href="mailto:jeodom17@gmail.com">Email: jeodom17@gmail.com</a>
+              </button>
+              </li>
+              <li>
+              <button class="mt-10 bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                <a href="https://github.com/jeodom17">GitHub</a>
+              </button>
+              </li>
+              <li>
+              <button class="mt-10 bg-pink-700 text-white font-bold py-2 px-8 rounded-full"> 
+                <a href="https://www.linkedin.com/in/justinodom17">LinkedIn</a>
+              </button>
+              </li>
+              </ul>
             </div>
-            <section>
+            </div>
+          
+            <div className="col-span-2">
               <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-white">
                 <div class="flex-auto p-5 lg:p-10">
                   <h4 class="text-2xl mb-4 text-black font-semibold">
@@ -91,8 +90,8 @@ export default function Footer() {
                   </form>
                 </div>
               </div>
-            </section>
-          </div>
+            </div>
+         </div>   
         </div>
       </footer>
     </>
