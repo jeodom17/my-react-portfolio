@@ -3,7 +3,8 @@ import React from "react";
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav className="relative flex flex-wrap items-center justify-between px-2 py-4 navbar-expand-lg bg-emerald-500 mb-3">
+    <header class="sticky top-0 z-50">
+    <nav className="relative flex flex-wrap items-center justify-between px-2 py-4 navbar-expand-lg bg-green-500 mb-0">
       <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
         <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
           <a
@@ -30,7 +31,7 @@ export default function Navbar(props) {
               >
                 <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
                 <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
-                  <button class="bg-emerald-500 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                  <button class="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
                     Portfolio
                   </button>
                 </span>
@@ -43,7 +44,7 @@ export default function Navbar(props) {
               >
                 <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
                 <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
-                <button class="bg-emerald-500 hover:bg-pink-700 text-white font-bold text-xl md:text-xl lg:text-xl font-heading py-2 px-8 rounded-full">
+                <button class="bg-yellow-300 hover:bg-pink-700 text-white font-bold text-xl md:text-xl lg:text-xl font-heading py-2 px-8 rounded-full">
                     Resume
                   </button>
                 </span>
@@ -56,7 +57,7 @@ export default function Navbar(props) {
               >
                 <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i>
                 <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
-                <button class="bg-emerald-500 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                <button class="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
                     Contact Me
                   </button>
                 </span>
@@ -66,5 +67,6 @@ export default function Navbar(props) {
         </div>
       </div>
     </nav>
+    </header>
   );
 }
