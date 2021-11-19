@@ -18,7 +18,7 @@ export default function Aboutme() {
                 Justin Odom
               </div>
               <p className="block mt-5 text-xl leading-tight font-medium text-black hover:underline">
-                Let's Build Something!
+                Let&apos;s Build Something!
               </p>
               <p className="mt-2 text-lg font-bold text-white">
                 I am a Junior full stack web developer seeking a position in web

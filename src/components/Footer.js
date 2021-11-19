@@ -10,7 +10,9 @@ export default function Footer() {
           </h1>
           <div className="mt-10 flex flex-row gap-x-20 text-center lg:text-left">
             <div className="col-span-2 w-full lg:w-6/12 px-4">
-              <h4 className="text-3xl font-semibold">Let's keep in touch!</h4>
+              <h4 className="text-3xl font-semibold">
+                Let&apos;s keep in touch!
+              </h4>
               <h5 className="text-lg mt-0 mb-2 text-black-600">
                 Find me on any of these platforms.
               </h5>
@@ -53,8 +55,8 @@ export default function Footer() {
                   <form id="feedbackForm" action="" method="">
                     <div className="relative w-full mb-3">
                       <label
-                        class="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        for="email"
+                        className="block uppercase text-gray-700 text-xs font-bold mb-2"
+                        htmlFor="email"
                       >
                         Email
                       </label>
@@ -70,12 +72,12 @@ export default function Footer() {
                     <div className="relative w-full mb-3">
                       <label
                         className="block uppercase text-gray-700 text-xs font-bold mb-2"
-                        for="message"
+                        htmlFor="message"
                       >
                         Message
                       </label>
                       <textarea
-                        maxlength="300"
+                        maxLength="300"
                         name="feedback"
                         id="feedback"
                         rows="4"

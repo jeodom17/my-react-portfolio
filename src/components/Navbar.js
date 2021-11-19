@@ -31,7 +31,7 @@ export default function Navbar(props) {
                 >
                   <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
-                    <button class="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                    <button className="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
                       Portfolio
                     </button>
                   </span>
@@ -44,7 +44,7 @@ export default function Navbar(props) {
                 >
                   <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
-                    <button class="bg-yellow-300 hover:bg-pink-700 text-white font-bold text-xl md:text-xl lg:text-xl font-heading py-2 px-8 rounded-full">
+                    <button className="bg-yellow-300 hover:bg-pink-700 text-white font-bold text-xl md:text-xl lg:text-xl font-heading py-2 px-8 rounded-full">
                       Resume
                     </button>
                   </span>
