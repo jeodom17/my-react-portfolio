@@ -16,6 +16,6 @@
 
 Solo project for GATech Coding Bootcamp.
 
-by:  `Justin Odom`
+by:  Justin Odom
 
 ### [My Github Page](https://github.com/jeodom17)
