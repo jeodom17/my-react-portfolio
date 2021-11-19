@@ -57,7 +57,7 @@ export default function Navbar(props) {
                 >
                   <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
-                    <button class="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                    <button className="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
                       Contact Me
                     </button>
                   </span>
