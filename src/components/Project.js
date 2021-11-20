@@ -4,12 +4,14 @@ import React from 'react';
 
 export default function Project() {
   return (
-    <div className="relative flex flex-col min-w-0 break-words bg-green-500 w-full mb-0 shadow-xl rounded-sm mt-0">
+    <div
+      id="project"
+      className="relative flex flex-col min-w-0 break-words bg-green-500 w-full mb-0 shadow-xl rounded-sm mt-0"
+    >
       <div className="px-4">
         <div className="mt-2 py-1 text-center">
           <section className="max-w-8xl mx-auto px-2 sm:px-3 lg:px-6 py-6">
             <div className="text-center pb-12">
-              <h2 className="text-base font-bold text-indigo-600"></h2>
               <h1 className="font-bold text-6xl md:text-4xl lg:text-5xl font-heading text-gray-900">
                 Check out some of my Projects below
               </h1>

@@ -4,12 +4,15 @@ export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <header className="sticky top-0 z-50">
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-4 navbar-expand-lg bg-green-500 mb-0">
+      <nav
+        id="top"
+        className="relative flex flex-wrap items-center justify-between px-2 py-4 navbar-expand-lg bg-green-500 mb-0"
+      >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto  px-4 lg:static lg:block lg:justify-start">
             <a
               className="font-bold text-3xl md:text-4xl lg:text-5xl font-heading uppercase text-white hover:text-pink-700"
-              href="#pablo"
+              href="https://jeodom17.github.io/my-react-portfolio/"
             >
               Justin Odom
             </a>
@@ -32,7 +35,7 @@ export default function Navbar(props) {
                   <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
                     <button className="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
-                      Portfolio
+                      <NavLink to="/about">Portfolio</NavLink>
                     </button>
                   </span>
                 </a>
@@ -40,7 +43,7 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                  href="#Project"
                 >
                   <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
