@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { NavLink } from 'react-router-dom';
+
 export default function Navbar(props) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -34,16 +36,18 @@ export default function Navbar(props) {
                 >
                   <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
-                    <button className="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
-                      <NavLink to="/about">Portfolio</NavLink>
-                    </button>
+                    <a href="#project">
+                      <button className="bg-yellow-300 hover:bg-pink-700 text-white font-bold py-2 px-8 rounded-full">
+                        Portfolio
+                      </button>
+                    </a>
                   </span>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#Project"
+                  href="./src/assets/img/Justin Odom Resume.pdf"
                 >
                   <i className="fab fa-twitter text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">
@@ -56,7 +60,7 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="google.com"
+                  href="#footer"
                 >
                   <i className="fab fa-pinterest text-lg leading-lg text-white opacity-75"></i>
                   <span className="ml-2 font-bold text-xl md:text-xl lg:text-xl font-heading">

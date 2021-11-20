@@ -3,7 +3,7 @@ import React from 'react';
 export default function Footer() {
   return (
     <>
-      <footer className="relative bg-emerald-500 pt-8 pb-6">
+      <footer id="footer" className="relative bg-emerald-500 pt-8 pb-6">
         <div className="container mx-auto px-4">
           <h1 className="font-bold text-center text-6xl md:text-4xl lg:text-5xl font-heading text-gray-900">
             Contact Me Below
